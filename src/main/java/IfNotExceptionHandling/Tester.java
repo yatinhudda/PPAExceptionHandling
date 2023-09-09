@@ -7,9 +7,15 @@ public class Tester {
         Tester.callMe();
     }
     static void callMe(){
-        int y = 70;
-        int x = 0;
-        int z = y/x;
-        System.out.println(z);
+        try{
+            int y = 70;
+            int x = 0;
+            int z = y/x;
+            System.out.println(z);
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+
     }
 }
