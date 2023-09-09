@@ -6,10 +6,23 @@ public class NestedException {
         try{
             int x = 24;
             int y = 0;
-            int ansInMain = NestedException.method1();
+            System.out.println(1);
+            int ans  = 50 / y;
+            System.out.println(2);
+            int arr[] = {4, 6};
+            arr[10] = 90;
+            System.out.println(3);
+
         }catch(ArithmeticException e){
+            System.out.println(4);
             System.out.println(e.toString());
-            System.out.println("Handled In Main");
+        }
+        catch (IndexOutOfBoundsException e){
+            System.out.println(5);
+            System.out.println(e.toString());
+        }
+        catch(Exception e){
+            System.out.println(e.toString());
         }
 
     }
