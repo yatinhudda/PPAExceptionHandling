@@ -14,7 +14,8 @@ public class Tester {
             System.out.println(z);
         }
         catch(Exception e){
-            System.out.println(e);
+            e.printStackTrace();
+            System.out.println(e.toString());
         }
 
     }
