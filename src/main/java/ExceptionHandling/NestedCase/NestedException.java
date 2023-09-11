@@ -24,7 +24,6 @@ public class NestedException {
         catch(Exception e){
             System.out.println(e.toString());
         }
-
     }
     static int method1(){
         //some tasks
